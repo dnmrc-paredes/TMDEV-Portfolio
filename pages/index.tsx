@@ -78,8 +78,6 @@ const IndexPage: NextPage = () => {
                 <section className={styles.sect2}>
                     <h1> Technologies </h1>
 
-                    <Image src="/css.svg" width="200" height="200" alt="tae" />
-
                     {/* <div className={styles.imgs}>
                         { skills.map(item => {
                             return <div key={item.title}>
