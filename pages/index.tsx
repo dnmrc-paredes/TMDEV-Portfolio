@@ -11,12 +11,12 @@ import styles from '../styles/index.module.scss'
 import fb from '../public/fb.svg'
 import li from '../public/linkedin.svg'
 import github from '../public/github.svg'
-import blazingReaders from '../public/blazingReaders.png'
-import socialLorem from '../public/sociallorem.png'
-import loremNotes from '../public/loremnotes.png'
-import loremBank from '../public/lorembank.png'
-import oishiFh from '../public/oishifh.png'
-import loremStudios from '../public/loremstudios.png'
+// import blazingReaders from '../public/blazingReaders.png'
+// import socialLorem from '../public/sociallorem.png'
+// import loremNotes from '../public/loremnotes.png'
+// import loremBank from '../public/lorembank.png'
+// import oishiFh from '../public/oishifh.png'
+// import loremStudios from '../public/loremstudios.png'
 
 const IndexPage: NextPage = () => {
     
@@ -78,6 +78,8 @@ const IndexPage: NextPage = () => {
                 <section className={styles.sect2}>
                     <h1> Technologies </h1>
 
+                    <Image src="/css.svg" width="200" height="200" alt="tae" />
+
                     {/* <div className={styles.imgs}>
                         { skills.map(item => {
                             return <div key={item.title}>
@@ -113,22 +115,22 @@ const IndexPage: NextPage = () => {
                     <div className={styles.boxes}>
 
                         <div onClick={project1} className={styles.box} id="allbox">
-                            <Image src={blazingReaders} width="350" height="350" alt="blazing-readers" />
+                            <Image src="/blazingreaders.png" width="350" height="350" alt="blazing-readers" />
                         </div>
                         <div onClick={project2} className={styles.box2} id="allbox">
-                            <Image src={socialLorem} width="350" height="350" alt="blazing-readers" />
+                            <Image src="/sociallorem.png" width="350" height="350" alt="blazing-readers" />
                         </div>
                         <div onClick={project3} className={styles.box3} id="allbox">
-                            <Image src={loremNotes} width="350" height="350" alt="blazing-readers" />
+                            <Image src="/loremnotes.png" width="350" height="350" alt="blazing-readers" />
                         </div>
                         <div onClick={project4} className={styles.box4} id="allbox">
-                            <Image src={loremBank} width="350" height="350" alt="blazing-readers" />
+                            <Image src="/lorembank.png" width="350" height="350" alt="blazing-readers" />
                         </div>
                         <div onClick={project5} className={styles.box5} id="allbox">
-                            <Image src={oishiFh} width="350" height="350" alt="blazing-readers" />
+                            <Image src="/oishifh.png" width="350" height="350" alt="blazing-readers" />
                         </div>
                         <div onClick={project6} className={styles.box6} id="allbox">
-                            <Image src={loremStudios} width="350" height="350" alt="blazing-readers" />
+                            <Image src="/loremstudios.png" width="350" height="350" alt="blazing-readers" />
                         </div>
                         
                     </div>
