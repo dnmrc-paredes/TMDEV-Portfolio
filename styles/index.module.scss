@@ -1,0 +1,512 @@
+@import './variables.scss';
+
+// Animations
+
+@keyframes shake {
+    0% {
+        transform: rotate(20deg);
+        // background-color: red;
+    }
+    100% {
+        transform: rotate(-40deg);
+        // background-color: yellow;
+    }
+}
+
+// Main
+
+main.main {
+    position: relative;
+    // padding: auto 6rem;
+
+    section.sect1 {
+        position: relative;
+        background-color: #121212;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // background-color: $main-color;
+        
+        h1 {
+            font-family: $main-font;
+            font-size: 70px;
+            font-weight: bold;
+            margin: 0 6rem;
+            color: white;
+        }
+
+        p {
+            font-family: $main-font;
+            font-size: 30px;
+            font-weight: 400;
+            margin: 0 6rem;
+            color: white;
+        }
+
+    }
+    
+    section.sect2 {
+        position: relative;
+        // background-color: yellow;
+        height: 630px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // background-color: yellow;
+
+        h1 {
+            font-size: 50px;
+            font-family: $main-font;
+            font-weight: bold;
+            text-align: center;
+            // margin-top: 5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .imgs {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 0 2rem;
+
+            .imgitem {
+                margin: 0 1rem;
+            }
+        }
+    }
+
+    section.sect3 {
+        position: relative;
+        height: 630px;
+        // background-color: teal;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 50px;
+            font-family: $main-font;
+            font-weight: bold;
+            text-align: center;
+            // margin-top: 5rem;
+            margin-bottom: 3rem;
+            background-color: $main-color;
+            background-color: #121212;
+            padding: 0.5rem;
+            // padding: 1rem;
+            color: white;
+        }
+
+        p {
+            font-family: $main-font;
+            font-size: 30px;
+            font-weight: 400;
+            margin: 0 6rem;
+            text-align: center;
+            // color: white;
+        }
+
+        .laptop {
+            // background-color: red;
+            animation: shake 0.5s ease-in-out alternate infinite;
+        }
+    }
+    
+    section.sect4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-size: 50px;
+            font-family: $main-font;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5rem;
+            // margin-bottom: 3rem;
+            background-color: $main-color;
+            background-color: #121212;
+            padding: 0.5rem;
+            // padding: 1rem;
+            color: white;
+        }
+        
+        .boxes {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+
+            #allbox {
+                display: flex;
+                justify-content: center;
+            }
+
+            .box {
+                position: relative;
+                margin: 0 1rem;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 100%;
+                    padding: 0.5rem;
+                    // background-color: red;
+                    opacity: 0;
+                    z-index: 2;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover::before {
+                    content: "Blazing Readers";
+                    font-family: $main-font;
+                    opacity: 1;
+                    color: white;
+                    transform: scaleX(1);
+                    background-color: #121212;
+                }
+
+                img {
+                    // background-color: yellow;
+                    margin: 0 1rem;
+                }
+
+            }
+
+            .box2 {
+                position: relative;
+                margin: 0 1rem;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 100%;
+                    padding: 0.5rem;
+
+                    // background-color: red;
+                    opacity: 0;
+                    z-index: 2;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover::before {
+                    content: "Social Lorem";
+                    font-family: $main-font;
+                    opacity: 1;
+                    color: white;
+                    transform: scaleX(1);
+                    background-color: #121212;
+                }
+
+                img {
+                    // background-color: yellow;
+                    margin: 0 1rem;
+                }
+
+            }
+
+            .box3 {
+                position: relative;
+                margin: 0 1rem;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 100%;
+                    padding: 0.5rem;
+
+                    // background-color: red;
+                    opacity: 0;
+                    z-index: 2;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover::before {
+                    content: "Lorem Notes";
+                    font-family: $main-font;
+                    opacity: 1;
+                    color: white;
+                    transform: scaleX(1);
+                    background-color: #121212;
+                }
+
+                img {
+                    // background-color: yellow;
+                    margin: 0 1rem;
+                }
+
+            }
+
+            .box4 {
+                position: relative;
+                margin: 0 1rem;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 100%;
+                    padding: 0.5rem;
+
+                    // background-color: red;
+                    opacity: 0;
+                    z-index: 2;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover::before {
+                    content: "Lorem Bank";
+                    font-family: $main-font;
+                    opacity: 1;
+                    color: white;
+                    transform: scaleX(1);
+                    background-color: #121212;
+                }
+
+                img {
+                    // background-color: yellow;
+                    margin: 0 1rem;
+                }
+
+            }
+
+            .box5 {
+                position: relative;
+                margin: 0 1rem;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 100%;
+                    padding: 0.5rem;
+
+                    // background-color: red;
+                    opacity: 0;
+                    z-index: 2;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover::before {
+                    content: "Oishi FoodHub";
+                    font-family: $main-font;
+                    opacity: 1;
+                    color: white;
+                    transform: scaleX(1);
+                    background-color: #121212;
+                }
+
+                img {
+                    // background-color: yellow;
+                    margin: 0 1rem;
+                }
+
+            }
+
+            .box6 {
+                position: relative;
+                margin: 0 1rem;
+                
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 100%;
+                    padding: 0.5rem;
+
+                    // background-color: red;
+                    opacity: 0;
+                    z-index: 2;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover::before {
+                    content: "Lorem Studios";
+                    font-family: $main-font;
+                    opacity: 1;
+                    color: white;
+                    transform: scaleX(1);
+                    background-color: #121212;
+                }
+
+                img {
+                    // background-color: yellow;
+                    margin: 0 1rem;
+                }
+
+            }
+
+        }
+
+    }
+
+    footer.footer {
+        // height: 250px;
+        // background-color: $main-color;
+        display: flex;
+        flex-direction: column;
+
+        .footersect1 {
+            // background-color: red;
+            display: flex;
+            height: 250px;
+
+            .email {
+                flex: 1;
+                // background-color: yellow;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                // text-align: center;
+    
+                h2 {
+                    font-family: $main-font;
+                    font-weight: bolder;
+                    // font-size: 2rem;
+                    // text-align: center;
+                }
+    
+                p {
+                    font-family: $main-font;
+                    font-weight: 400;
+                    // text-align: left;
+                }
+            }
+    
+            .socials {
+                flex: 1;
+                // background-color: teal;
+                display: flex;
+                justify-content: center;
+    
+                img {
+                    // background-color: red;
+                    cursor: pointer;
+                    margin: 1rem 0rem;
+                }
+            }
+        }
+
+        .footersect2 {
+            // background-color: yellow;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                font-family: $main-font;
+                font-weight: 400;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    main.main {
+
+        section.sect1 {
+
+            h1 {
+                margin: 0 3rem;
+            }
+    
+            p {
+                margin: 0 3rem;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    main.main {
+
+        section.sect1 {
+
+            h1 {
+                margin: 0 2rem;
+                font-size: 10vw;
+            }
+    
+            p {
+                margin: 0 2rem;
+                font-size: 5vw;
+            }
+
+        }
+
+        section.sect2 {
+            height: 800px;
+
+            h1 {
+                font-size: 10vw;
+            }
+
+        }
+
+        section.sect3 {
+            align-items: none;
+            height: 450px;
+
+            h1 {
+                font-size: 10vw;
+            }
+
+            p {
+                font-size: 5vw;
+                // text-align: left;
+                margin: 2rem;
+            }
+
+        }
+
+        section.sect4 {
+
+            h1 {
+                font-size: 10vw;
+            }
+
+        }
+
+        footer.footer {
+
+            .footersect1 {
+                margin-top: 2rem;
+                flex-direction: column;
+                height: 100px;
+            }
+        }
+
+    }
+
+}
