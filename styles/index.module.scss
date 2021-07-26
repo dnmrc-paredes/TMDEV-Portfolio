@@ -428,6 +428,10 @@ main.main {
 
 }
 
+.tooltip {
+    font-family: $main-font;
+}
+
 @media screen and (max-width: 850px) {
 
     main.main {

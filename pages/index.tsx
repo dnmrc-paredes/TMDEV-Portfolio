@@ -1,6 +1,7 @@
 import {NextPage} from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import ReactTooltip from 'react-tooltip';
 
 // Data
 import { skills } from '../data/skills'
@@ -56,7 +57,7 @@ const IndexPage: NextPage = () => {
         <div>
 
             <Head>
-                <title> DEV </title>
+                <title> TMDEV </title>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
                 <meta charSet="utf-8"/>
                 <meta name="description" content="An aspiring Javascript Full Stack Developer" />
@@ -90,7 +91,7 @@ const IndexPage: NextPage = () => {
                     <div className={styles.imgs}>
                         { skills.map(item => {
                             return <div className={styles.imgitem} key={item.id}>
-                                <Image src={item.url} height="90" width="90" alt={item.title} />
+                                <Image data-tip={item.title} src={item.url} height="90" width="90" alt={item.title} />
                             </div>
                         }) }
                     </div>
@@ -156,6 +157,8 @@ const IndexPage: NextPage = () => {
                 </footer>
 
             </main>
+
+            <ReactTooltip className={styles.tooltip} />
 
         </div>
         

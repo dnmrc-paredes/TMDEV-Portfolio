@@ -12,7 +12,7 @@ export const Header: FC = () => {
     return (
         <nav className={styles.main} >
             <div className={styles.navlogo}>
-                <h1> DEV </h1>
+                <h1> TMDEV </h1>
             </div>
 
             <div className={styles.navlinks}>
